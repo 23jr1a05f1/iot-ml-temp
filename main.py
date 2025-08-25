@@ -1,5 +1,5 @@
 import pandas as pd
- def generateAI(): 
+def generateAI(): 
     dataset=pd.read_csv('data.csv') 
     dataset=dataset.dropna()
      X=dataset.iloc[:,1].values 
