@@ -1,4 +1,4 @@
-import pandas as 
+import pandas as pd
  def generateAI(): 
     dataset=pd.read_csv('data.csv') 
     dataset=dataset.dropna()
@@ -11,4 +11,5 @@ import pandas as
        ai=KNeighborsClassifier(n_neighbors=5)
         ai.fit(X_train,y_train)
        import pickle 
+
       pickle.dump(ai,open('model.pkl','wb'))
